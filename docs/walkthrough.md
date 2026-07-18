@@ -10,18 +10,17 @@ The walkthrough deliberately mixes three different kinds of material, and
 keeps them distinguishable rather than presenting the composite as one
 uninterrupted screen capture:
 
-1. **Recorded live dialogue transcript.** The exact Mara and Edda lines are
-   real output from one live playthrough (dialogue model
+1. **Recorded live dialogue transcript.** The Mara and Edda dialogue shown
+   consists of verbatim excerpts from one live playthrough (dialogue model
    `claude-sonnet-5`), preserved verbatim in
-   `source/dialogue-transcript.md`. The player's questions are shortened
-   only for layout — never invented or reworded; NPC replies are exact.
-2. **Current application screenshots**, captured against the running
-   Stage 20 build under the deterministic stub provider (no live model
-   call, so they're free to reproduce): the intro modal, Mara's canonical
-   map token once she's in sight, the cottage clearing while Edda is
-   canonically `away` (no token — that's correct behavior, not a missing
-   feature), and the player and Edda's tokens rendered distinctly at the
-   same co-located tile (the Stage 20A fix).
+   `source/dialogue-transcript.md`. Player and NPC lines may be shortened by
+   omission for layout, but are never paraphrased or recombined; the source
+   transcript preserves each complete response.
+2. **Application screenshots from the Stage 19/20 development build.** The
+   intro and Edda-away captures predate Stage 20 but depict UI/state that the
+   token stage did not change. Mara's canonical token and the co-located
+   player/Edda tokens are current Stage 20/20A evidence. These captures use
+   the deterministic stub provider, so no live model call is needed.
 3. **Generated portrait/background art**, used only as decorative
    composition on the two dialogue slides. This is visual framing, not a
    claim that the current game UI contains illustrated character

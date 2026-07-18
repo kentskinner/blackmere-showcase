@@ -3,9 +3,8 @@
 Captured from one clean playthrough of the Stage 19/20 development build on
 2026-07-18. Dialogue model: `claude-sonnet-5`. Four live dialogue exchanges
 were generated for this capture; nothing here is invented or replayed by the
-generator — these lines are embedded as text in
-`tools/make_technical_walkthrough.py`, and rebuilding the GIF makes no new
-model call.
+generator. The walkthrough embeds verbatim excerpts of these lines, shortening
+only by omission for layout, and rebuilding the GIF makes no new model call.
 
 ## Live actions taken during capture
 

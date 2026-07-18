@@ -334,7 +334,7 @@ def render_dialogue(title, subtitle, step, portrait, npc, revealed):
     draw.rounded_rectangle((42, 184, 452, 694), radius=15, outline=(89, 102, 100, 255), width=2)
     draw.rectangle((42, 610, 452, 694), fill=(4, 8, 12, 215))
     draw.text((68, 629), npc, font=f(17, bold=True), fill=(236, 226, 200, 255))
-    draw.text((68, 660), "actual live output", font=f(12, mono=True), fill=(127, 157, 165, 255))
+    draw.text((68, 660), "recorded live-output excerpt", font=f(12, mono=True), fill=(127, 157, 165, 255))
     y = 184
     for speaker, display_text, full_text in revealed:
         is_player = speaker == "BRAN"
@@ -387,7 +387,7 @@ EDDA_EXCHANGES = [
     ("I've been waiting for you.", "You've been waiting for me specifically, or just waiting?"),
     (
         "The village is very quiet. Is something wrong?",
-        "A traveler went missing a week back. It's kept me watching the place closer than usual.",
+        "A traveler who stayed at the inn went missing a week back — no sign of them since.",
     ),
 ]
 

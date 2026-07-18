@@ -6,7 +6,7 @@ Most AI roleplaying systems ask a language model to remember what is true. Black
 
 ![Blackmere technical walkthrough](assets/blackmere-technical-walkthrough.gif)
 
-This ~70-second walkthrough is a composed technical demo, not a raw screen capture: it combines a recorded live dialogue transcript, current application screenshots taken under the deterministic stub provider, and generated portrait art. See [Walkthrough notes](docs/walkthrough.md) for exactly which parts are which. The player moves through the current map, speaks with Mara, walks to Edda Vale's cottage, waits while canonical time and weather change, observes Edda arrive, and then speaks with her.
+This ~70-second walkthrough is a composed technical demo, not a raw screen capture: it combines a recorded live dialogue transcript, application screenshots from the Stage 19/20 development build (including current Stage 20 token evidence), and generated portrait art. See [Walkthrough notes](docs/walkthrough.md) for exactly which parts are which. The player moves through the current map, speaks with Mara, walks to Edda Vale's cottage, waits while canonical time and weather change, observes Edda arrive, and then speaks with her.
 
 ## What the walkthrough demonstrates
 
