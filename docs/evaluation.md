@@ -4,7 +4,7 @@ Blackmere treats misleading prose as a system failure even when no state mutatio
 
 ## Deterministic coverage
 
-The private development repository currently contains 609 automated tests across the domain, perception, persistence, content, AI boundary, server, web application, and evaluation harness. Fourteen Playwright journeys exercise the application end to end.
+The private development repository currently contains 629 automated tests across the domain, perception, persistence, content, AI boundary, server, web application, and evaluation harness. Sixteen Playwright journeys exercise the application end to end.
 
 Tests cover properties such as:
 
