@@ -59,10 +59,10 @@ This is a research prototype and compact vertical slice, not a complete RPG plat
 
 ## Current evidence
 
-The current Stage 46 development snapshot passes:
+The current Stage 49 development snapshot passes:
 
-- 1,126 deterministic and application tests across eight packages;
-- 36 end-to-end browser journeys;
+- 1,137 deterministic and application tests across eight packages;
+- 40 end-to-end browser journeys;
 - TypeScript type-checking and linting;
 - narrow, explicitly authorized live-model evaluations whose failures are retained rather than rounded away.
 
@@ -74,6 +74,6 @@ This is the public-facing showcase for Blackmere. The active engine repository r
 
 ## Recent progress
 
-Since the recorded walkthrough, Blackmere has gained guarded dialogue grounding, interruptible Mara/Edda scenes, bounded material actions, recorded risk resolution, a contained staged Mire Hound challenge, canonical threat map cues, a chronological story feed, a state/turn inspector, persistent player identity, and a compact player ability card. The [status site](https://kentskinner.github.io/blackmere-showcase/) is the concise current view; this README retains the deeper technical framing and the original captured walkthrough.
+Since the recorded walkthrough, Blackmere has gained guarded dialogue grounding, interruptible Mara/Edda scenes, bounded material actions, recorded risk resolution, a contained staged Mire Hound challenge, canonical threat map cues, a chronological story feed, a state/turn inspector, persistent player identity, a compact player ability card, discovered landmark labels, world conditions, and a responsive phone layout. The [status site](https://kentskinner.github.io/blackmere-showcase/) is the concise current view; this README retains the deeper technical framing and the original captured walkthrough.
 
 Blackmere is deliberately small. Its purpose is to make a larger possibility believable: persistent fictional worlds in which AI can improvise without being allowed to rewrite reality.
