@@ -1,0 +1,11 @@
+{
+  "project": "Blackmere",
+  "updated": "2026-07-20",
+  "stage": 46,
+  "stageName": "Compact player card",
+  "deterministicTests": 1126,
+  "browserJourneys": { "passed": 36, "total": 36 },
+  "liveCallsForStage": 0,
+  "playablePublicBuild": false,
+  "engineRepositoryPublic": false
+}
