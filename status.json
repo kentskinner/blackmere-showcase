@@ -1,10 +1,10 @@
 {
   "project": "Blackmere",
   "updated": "2026-07-20",
-  "stage": 47,
-  "stageName": "Discovered landmark presentation",
-  "deterministicTests": 1129,
-  "browserJourneys": { "passed": 37, "total": 37 },
+  "stage": 49,
+  "stageName": "Responsive phone play",
+  "deterministicTests": 1137,
+  "browserJourneys": { "passed": 40, "total": 40 },
   "liveCallsForStage": 0,
   "playablePublicBuild": false,
   "engineRepositoryPublic": false
