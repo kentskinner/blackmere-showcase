@@ -2,6 +2,8 @@
 
 **A small experiment in AI roleplay backed by a deterministic, inspectable world.**
 
+**[Open the living development status site](https://kentskinner.github.io/blackmere-showcase/)** — current verified status, screenshot, example dialogue, recent progress, and honest limitations.
+
 Most AI roleplaying systems ask a language model to remember what is true. Blackmere takes a different approach: the game engine owns canonical state, while the model interprets language and performs characters from purpose-built, bounded context. Its output remains untrusted.
 
 ![Blackmere technical walkthrough](assets/blackmere-technical-walkthrough.gif)
@@ -57,10 +59,10 @@ This is a research prototype and compact vertical slice, not a complete RPG plat
 
 ## Current evidence
 
-The current development snapshot passes:
+The current Stage 46 development snapshot passes:
 
-- 629 deterministic and application tests across eight packages;
-- 16 end-to-end browser journeys;
+- 1,126 deterministic and application tests across eight packages;
+- 36 end-to-end browser journeys;
 - TypeScript type-checking and linting;
 - narrow, explicitly authorized live-model evaluations whose failures are retained rather than rounded away.
 
@@ -70,8 +72,8 @@ See [Architecture](docs/architecture.md), [Walkthrough notes](docs/walkthrough.m
 
 This is the public-facing showcase for Blackmere. The active engine repository remains private while the architecture and product direction are still evolving. This repository contains demonstration media and technical documentation, not the engine source or a downloadable game release.
 
-## Near-term work
+## Recent progress
 
-The canonical map token layer (player, Mara, Edda) now exists; the smallest remaining presentation gap is that tokens snap to their canonical position each turn rather than animating between tiles. The most important systems problem is still a stronger evidence boundary for live dialogue, so unsupported assertions like the one this walkthrough shows can be detected before display rather than merely prevented from mutating state.
+Since the recorded walkthrough, Blackmere has gained guarded dialogue grounding, interruptible Mara/Edda scenes, bounded material actions, recorded risk resolution, a contained staged Mire Hound challenge, canonical threat map cues, a chronological story feed, a state/turn inspector, persistent player identity, and a compact player ability card. The [status site](https://kentskinner.github.io/blackmere-showcase/) is the concise current view; this README retains the deeper technical framing and the original captured walkthrough.
 
 Blackmere is deliberately small. Its purpose is to make a larger possibility believable: persistent fictional worlds in which AI can improvise without being allowed to rewrite reality.

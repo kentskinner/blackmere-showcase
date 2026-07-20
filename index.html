@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Current verified status, screenshots, and dialogue from Blackmere: an AI roleplaying experiment backed by a deterministic world."
+    />
+    <meta property="og:title" content="Blackmere — development status" />
+    <meta
+      property="og:description"
+      content="An AI-run mystery whose engine, not the language model, owns what is true."
+    />
+    <meta property="og:image" content="assets/current-status.png" />
+    <title>Blackmere — development status</title>
+    <link rel="stylesheet" href="status.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="wordmark" href="#top" aria-label="Blackmere home">Blackmere</a>
+      <nav aria-label="Site navigation">
+        <a href="#status">Status</a>
+        <a href="#dialogue">Dialogue</a>
+        <a href="https://github.com/kentskinner/blackmere-showcase/blob/main/docs/architecture.md"
+          >Architecture</a
+        >
+        <a href="https://github.com/kentskinner/blackmere-showcase">GitHub</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">A persistent, inspectable AI roleplaying experiment</p>
+          <h1>An AI-run mystery that remembers what is actually true.</h1>
+          <p class="lede">
+            Blackmere lets a language model interpret, narrate, and perform characters—but a
+            deterministic engine owns facts, movement, time, chance, and consequences.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#status">See the current build</a>
+            <a class="button quiet" href="assets/blackmere-technical-walkthrough.gif"
+              >Watch the 70-second walkthrough</a
+            >
+          </div>
+        </div>
+        <aside class="principle" aria-label="Blackmere's central rule">
+          <span>The central rule</span>
+          <strong>The model may improvise language. It may not rewrite reality.</strong>
+        </aside>
+      </section>
+
+      <section class="status-section" id="status">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Latest verified local build</p>
+            <h2>Stage 46: player identity is now visible and grounded</h2>
+          </div>
+          <p class="updated">Updated July 20, 2026</p>
+        </div>
+
+        <div class="metrics" aria-label="Current verification evidence">
+          <div><strong>1,126</strong><span>deterministic tests</span></div>
+          <div><strong>36 / 36</strong><span>Chrome journeys</span></div>
+          <div><strong>46</strong><span>completed stage</span></div>
+          <div><strong>0</strong><span>live calls for this stage</span></div>
+        </div>
+
+        <figure class="current-shot">
+          <img
+            src="assets/current-status.png"
+            alt="Blackmere development build showing the map and a player card for Bran Vale with Awareness 12 and Prowess 12"
+          />
+          <figcaption>
+            The latest player-facing view. The name is persistent session identity; Awareness and
+            Prowess are exact canonical abilities, not values invented by the UI or model.
+          </figcaption>
+        </figure>
+      </section>
+
+      <section class="capabilities" aria-labelledby="working-title">
+        <div class="section-heading compact">
+          <div>
+            <p class="eyebrow">What works now</p>
+            <h2 id="working-title">A small adventure, with unusually strict boundaries</h2>
+          </div>
+        </div>
+        <div class="card-grid">
+          <article>
+            <h3>Grounded characters</h3>
+            <p>
+              Mara and Edda have different knowledge, memories, goals, and physical presence.
+              Unsupported concrete dialogue claims are checked before display.
+            </p>
+          </article>
+          <article>
+            <h3>Real consequences</h3>
+            <p>
+              Investigations and hostile challenges use recorded dice, authored outcomes, and
+              fail-forward consequences. Undo cannot be used to reroll revealed chance.
+            </p>
+          </article>
+          <article>
+            <h3>A canonical world</h3>
+            <p>
+              Movement, fog, time, weather, NPC schedules, discovered facts, and the Mire Hound's
+              state all come from one persistent world model.
+            </p>
+          </article>
+          <article>
+            <h3>Inspectable history</h3>
+            <p>
+              The active story, committed commands, events, before/after state, and resolution
+              ledger can be inspected without maintaining a second version of truth.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="dialogue-section" id="dialogue">
+        <div class="section-heading compact">
+          <div>
+            <p class="eyebrow">Recorded live dialogue</p>
+            <h2>Characters perform freely inside bounded context</h2>
+          </div>
+        </div>
+        <div class="dialogue-grid">
+          <article class="transcript">
+            <p class="speaker player">Bran</p>
+            <blockquote>Good afternoon. I'm Bran. What happened to the missing traveler?</blockquote>
+            <p class="speaker npc">Mara</p>
+            <blockquote>
+              Don't know. Went out one night and didn't come back. That's all anyone can tell you.
+            </blockquote>
+            <p class="speaker player">Bran</p>
+            <blockquote>You don't have to tell me. But you seem frightened.</blockquote>
+            <p class="speaker npc">Mara</p>
+            <blockquote>
+              Frightened's a strong word. Careful, maybe. This place has had enough trouble without
+              adding guesswork to it.
+            </blockquote>
+            <p class="expression">— flat gaze, arms crossed</p>
+          </article>
+          <aside class="dialogue-note">
+            <h3>Why this is more than a chatbot transcript</h3>
+            <p>
+              Mara may evade or distrust the player, but her words do not silently create facts.
+              Relationship changes and disclosures pass through separate engine validation.
+            </p>
+            <a
+              href="https://github.com/kentskinner/blackmere-showcase/blob/main/source/dialogue-transcript.md"
+              >Read the exact capture notes →</a
+            >
+          </aside>
+        </div>
+      </section>
+
+      <section class="pipeline" aria-labelledby="pipeline-title">
+        <p class="eyebrow">The governing pipeline</p>
+        <h2 id="pipeline-title">Language proposes. The engine decides.</h2>
+        <ol>
+          <li><span>1</span>Player intent</li>
+          <li><span>2</span>Bounded interpretation</li>
+          <li><span>3</span>Legal action handle</li>
+          <li><span>4</span>Deterministic resolution</li>
+          <li><span>5</span>Atomic canonical commit</li>
+          <li><span>6</span>Grounded performance</li>
+        </ol>
+      </section>
+
+      <section class="timeline" aria-labelledby="timeline-title">
+        <div>
+          <p class="eyebrow">Recent progress</p>
+          <h2 id="timeline-title">What changed in the current development run</h2>
+        </div>
+        <ol>
+          <li><strong>Stages 45–46</strong><span>Persistent player name and compact ability card.</span></li>
+          <li><strong>Stages 40–44</strong><span>Canonical state lab and a chronological “Story so far”.</span></li>
+          <li><strong>Stages 27–38</strong><span>Recorded risk, a bounded Mire Hound encounter, threat map cues, and optional progress.</span></li>
+          <li><strong>Stages 21–26</strong><span>Grounded scene speech, interruptible NPC scenes, and bounded material actions.</span></li>
+        </ol>
+      </section>
+
+      <section class="honest-boundary">
+        <div>
+          <p class="eyebrow">Honest boundary</p>
+          <h2>This is still a research prototype.</h2>
+        </div>
+        <p>
+          Blackmere is an authored vertical slice, not a complete RPG platform. The hostile scene
+          is not a general combat system; the map is functional rather than finished art; and the
+          playable development build remains local until authentication, rate limits, cost
+          controls, and abuse protection are in place.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        This page is refreshed after meaningful, independently verified milestones—not every
+        internal experiment.
+      </p>
+      <a href="https://github.com/kentskinner/blackmere-showcase">Public showcase repository</a>
+    </footer>
+  </body>
+</html>
